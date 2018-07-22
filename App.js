@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
 import GeologicalExample from './GeologicalExample';
+import FingerprintApplication from './FingerprintApplication';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -12,10 +13,13 @@ const instructions = Platform.select({
 
 // type Props = {};
 export default class App extends Component {
+
+
   render() {
     return (
       <View style={styles.container}>
-        <GeologicalExample/>
+        <FingerprintApplication />
+        <GeologicalExample />
       </View>
     );
   }
