@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 
-import GeologicalExample from './GeologicalExample';
-import FingerprintApplication from './FingerprintApplication';
+import GeologicalExample from './src/GeologicalExample';
+import FingerprintApplication from './src/FingerprintApplication';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,7 +19,6 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <FingerprintApplication />
-        <GeologicalExample />
       </View>
     );
   }
